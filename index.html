@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/f4ecd71f58.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+   <div class="header">
+      <div class="header-logo">プログラミングひろば</div>
+      <div class="header-inquiry">
+         <a href="https://twitter.com/Miwa_web_and_AI" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-twitter"></i>ミワ_Miwa
+         </a>
+      </div>
+   </div>
+
+
+   <div class="h1-container">
+      <h1><span class="h1">CSS</span><br>Animations</h1>
+      <div class="welcome">Welcome to <span>Miwa</span>'s practice page!</div>
+   </div>
+
+   <div class="head-discription">
+      <p>CSSアニメーションの練習として作ったものを置いています。上の方ほど最近作ったものです。</p>
+      <div class="updated">更新日：<time id="modify"></time></div>
+   </div>
+
+   <div class="cut-line"></div>
+
+
+
+
+
+
+
+
+   <!-- 二択のルーレット -->
+   <section>
+      <div class="common-container tall">
+         <div class="p10arrow"><i class="fa-solid fa-down-long fa-7x"></i></div>
+         <div id="p10top"></div>
+         <div id="p10bottom"></div>
+      </div>
+
+      <button id="move10">Click!</button>
+      <p class="my-note">クリックするとその状態で止まるようにしたかったが断念。javascriptをちゃんとやってからにしよう。</p>
+      <div class="cut-line"></div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+   <!-- 下部分から表示されていく虹 -->
+   <section>
+      <div class="p9rainbow-and-clouds-container">
+         <div class="common-container tall p9">
+            <div id="p9red"></div>
+            <div id="p9orange"></div>
+            <div id="p9yellow"></div>
+            <div id="p9green"></div>
+            <div id="p9blue"></div>
+            <div id="p9navy"></div>
+            <div id="p9purple"></div>
+         </div>
+
+         <div id="p9clouds-left">
+            <div class="c9cloud1"></div>
+            <div class="c9cloud2"></div>
+            <div class="c9cloud3"></div>
+            <div class="c9cloud4"></div>
+            <div class="c9cloud5"></div>
+            <div class="c9cloud6"></div>
+         </div>
+
+         <div id="p9clouds-right">
+            <div class="c9cloud1"></div>
+            <div class="c9cloud2"></div>
+            <div class="c9cloud3"></div>
+            <div class="c9cloud4"></div>
+            <div class="c9cloud5"></div>
+            <div class="c9cloud6"></div>
+         </div>
+      </div>
+
+      <button id="move9">Click!</button>
+      <p class="my-note">太陽も現れるようにしよう</p>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- ホバーとかボタンで左から右へ下線が表示 -->
+   <section>
+      <div class="common-container">
+         <div id="p8">
+            <span id="c8">
+               カーソルを載せると...
+            </span>
+         </div>
+         （スマホの場合はタップ）
+
+         <div id="p8-btn">
+            <span id="c8-btn">
+               ボタンを押すと...
+            </span>
+         </div>
+      </div>
+
+      <button id="move8">Click!</button>
+      <P class="my-note">二度目のクリックで逆再生させたいが...</P>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 七色がずれて動く -->
+   <section>
+      <div class="common-container">
+         <div id="p7-red"></div>
+         <div id="p7-orange"></div>
+         <div id="p7-yellow"></div>
+         <div id="p7-green"></div>
+         <div id="p7-blue"></div>
+         <div id="p7-navy"></div>
+         <div id="p7-purple"></div>
+      </div>
+
+      <button id="move7">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 白い犬が動く -->
+   <section>
+      <div class="common-container super-tall">
+         <div id="p6">
+            <div id="c6"></div>
+         </div>
+      </div>
+
+      <button id="move6">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 回転球を回転中心とする球 -->
+   <section>
+      <div class="common-container tall">
+         <div id="p5">
+            <div id="c5">
+               <div id="c5-1"></div>
+               <div id="c5-2"></div>
+            </div>
+         </div>
+      </div>
+      <button id="move5">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 八色が回転 -->
+   <section>
+      <div class="colors-rotation-containerTop">
+         <div id="p4LT"></div>
+         <div id="p4RT"></div>
+      </div>
+      <div class="colors-rotation-containerBottom">
+         <div id="p4LB"></div>
+         <div id="p4RB"></div>
+      </div>
+
+      <button id="move4">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 右に動きつつ原点回転し、中は左下原点回転 -->
+   <section>
+      <div class="parent p3-btn" id="p3-btn">
+         <div class="child c3-btn" id="c3-btn"></div>
+      </div>
+
+      <button id="move-btn3">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 右に動きつつ中が回転 -->
+   <section>
+      <div class="parent p2-btn" id="p2-btn">
+         <div class="child c2-btn" id="c2-btn"></div>
+      </div>
+
+      <button id="move-btn2">Click!</button>
+      <div class="cut-line"></div>
+   </section>
+
+
+   <!-- 右と左に動く -->
+   <section>
+      <div class="parent p1-btn" id="p1-btn">
+         <div class="child c1-btn" id="c1-btn"></div>
+      </div>
+
+      <button id="move-btn1">Click!</button>
+      <!-- <div class="cut-line"></div> -->
+   </section>
+
+
+
+
+      <!-- thank you for seeing! -->
+      <section>
+         <div id="thank-you-container">
+            <div id="thank-you-finger"><i class="fa-regular fa-hand-point-right"></i></div>
+            <button id="thank-you-btn">thank you for seeing!</button>
+         </div>
+   
+   
+         <div id="thank-you-for-seeing">Thank you for seeing!
+            <!-- <div id="thank-you-for-seeing-text">Thank you for seeing!</div> -->
+         </div>
+      </section>
+
+
+
+
+
+
+
+   <div class="footer">
+      <div class="footer-logo"><span>プログラミングひろば</span><br>© 2023 ミワ_Miwa</div>
+      <div class="footer-list">
+         <ul>
+            <li><a href="">お問い合わせ</a></li>
+            <li>|</li>
+            <li><a href="">プライバシーポリシー</a></li>
+            <li>|</li>
+            <li><a href="">ミワについて</a></li>
+         </ul>
+      </div>
+   </div>
+
+
+
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
