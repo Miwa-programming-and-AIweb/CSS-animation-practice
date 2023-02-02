@@ -1,26 +1,3 @@
-
-
-//二択のルーレット
-const p10top=document.getElementById("p10top");
-const p10bottom=document.getElementById("p10bottom");
-var counter10=0;
-const p10random = Math.random();
-
-document.getElementById("move10").onclick=function(){
-   counter10++;
-
-   if(counter10%2==1){
-      p10top.classList.add("p10top");
-      p10bottom.classList.add("p10bottom");
-   }else{
-      p10top.classList.remove("p10top");
-      p10bottom.classList.remove("p10bottom");
-   }
-}
-
-
-
-
 //下部分から表示される虹
 const p9red=document.getElementById("p9red");
 const p9orange=document.getElementById("p9orange");
