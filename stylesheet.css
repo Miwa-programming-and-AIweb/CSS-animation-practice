@@ -1,0 +1,970 @@
+@charset "utf-8";
+
+@font-face{
+   font-family: "GreatVibes";
+   src: url("GreatVibes-Regular.ttf") format("truetype");
+}
+
+
+*{
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+span.h1{
+   border-bottom: 4px solid rgb(255, 252, 79);
+   padding-right: 16px;
+   animation: h1-animation 5s 1;
+}
+h1{
+   all: unset;
+   font-size: 56px;
+   font-weight: bold;
+   font-style: italic;
+   color: rgb(0, 243, 178);
+   border-bottom: 4px solid rgb(255, 252, 79);
+   width: 360px;
+
+   display: inline-block;
+   margin-top: 60px;
+   margin-left: 8px;
+   animation: h1-animation 4s 1;
+}
+@keyframes h1-animation{
+   0%{
+      color: rgb(255, 255, 255);
+      border-bottom: 4px solid white;   
+   }
+   100%{
+      color: rgb(0, 243, 178);
+      border-bottom: 4px solid rgb(255, 252, 79);
+   }
+}
+
+.h1-container{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.welcome{
+   all:unset;
+   margin-top: 16px;
+   margin-left: 16px;
+   margin-bottom: 8px;
+   font-size: 22px;
+}
+.welcome span{
+   font-weight: bold;
+}
+
+.head-discription{
+   margin: 40px 16px 0;
+   padding: 16px 16px 48px;
+   background-color: rgb(138, 138, 138);
+   color: rgb(255, 255, 255);
+   border-radius: 8px;
+   box-shadow: 0 0 32px rgb(60, 60, 60);
+   line-height: 28px;
+   font-size: 17px;
+}
+.head-discription .updated{
+   float: right;
+   margin-top: 8px;
+   font-size: 16px;
+   padding: 0 20px 0;
+   border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+
+/* header */
+.header {
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   box-shadow: 0px 2px 6px rgb(132, 132, 132);
+   z-index: 1;
+   background-color: rgb(0, 0, 0);
+
+   padding: 0 1%;
+   height: 34px;
+}
+
+.header-logo {
+   display: flex;
+   align-items: center;
+
+   font-size: 120%;
+   color: azure;
+   font-weight: bold;
+}
+
+.header-inquiry {
+   font-size: 80%;
+   position: fixed;
+   top: 4px;
+   right: 8px;
+
+   margin-right: 2px;
+   padding: 3px;
+   border: 2px solid  rgb(0, 129, 221);
+   border-radius: 15px;
+}
+
+.header-inquiry i{
+   padding-right: 1px;
+   color: rgb(0, 149, 255);
+   font-size: 15px;
+}
+
+.header-inquiry a {
+   display: flex;
+   align-items: center;
+   font-size: 11px;
+   color: azure;
+   text-decoration: none;
+   letter-spacing: -0.03em;
+}
+
+
+
+
+/* footer */
+.footer {
+   background-color: black;
+   color: azure;
+   height: 112px;
+   padding-top: 8px;
+
+}
+
+.footer-logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   line-height: 28px;
+}
+
+.footer-logo span {
+   font-size: 25px;
+   font-weight: bold;
+   margin-bottom: -25px;
+   margin-top: 10px;
+}
+
+.footer-list{
+   margin-bottom: 2px;
+}
+
+.footer-list ul {
+   all: unset;
+   font-size: 13px;
+   display: flex;
+   justify-content: center;
+}
+
+.footer-list li {
+   list-style: none;
+   padding: 20px 7px 0px 7px;
+}
+.footer-list a{
+   color: azure;
+   text-decoration: none;
+}
+
+
+
+
+/* このページの共通設定 */
+.parent{
+   margin-left: 32px;
+   margin-top: 64px;
+   position: relative;
+   width: 160px;
+   height: 160px;
+   background-color: rgb(255, 0, 0);
+}
+.child{
+   position: absolute;
+   bottom: 25%; 
+   right: 25%;
+   width: 80px;
+   height: 80px;
+   background-color: rgb(0, 137, 0);
+}
+.cut-line{
+   margin-top: 32px;
+   width: 100%;
+   height: 1px;
+   background-color: black;
+}
+button{
+   padding: unset;
+   margin-top: 24px;
+   margin-left:32px;
+   width: 80px;
+   height: 20px;
+   font-size: 16px;
+   cursor: pointer;
+}
+button:active{
+   background-color: rgb(181, 255, 255);
+}
+.common-container{
+   margin: 48px 0 0 32px;
+}
+.common-container.tall{
+   margin: 104px 0 0 32px;
+}
+.common-container.super-tall{
+   margin: 240px 0 0 32px;
+}
+.my-note{
+   margin-top: 32px;
+   margin-left: 32px;
+   margin-right: 24px;
+   opacity: .6;
+}
+.my-note::before{
+   content: "※";
+}
+
+
+
+
+
+
+
+/* 二択のルーレット */
+.p10description{
+   line-height: 32px;
+
+}
+.p10description #choice{
+   font-size: 56px;
+   margin-left: -16px;
+}
+.p10description #text{
+   font-size: 20px;
+   padding-left: 120px;
+}
+
+.p10arrow{
+   width: 100px;
+   height: 128px;
+   color: red;
+   margin-left: 64px;
+}
+
+
+#p10top{
+   width: 200px;
+   height: 100px;
+   background-color: rgb(0, 255, 0);
+   border-radius: 100px 100px 0 0;
+   transform-origin: 100px 100px;
+}
+.p10top{
+   animation: p10top .2s infinite forwards linear;
+}
+@keyframes p10top{
+   100%{transform: rotate(360deg);}
+}
+#p10bottom{
+   width: 200px;
+   height: 100px;
+   background-color: rgb(255, 0, 0);
+   border-radius: 0 0 100px 100px;
+   transform-origin: 100px 0;
+}
+.p10bottom{   
+   animation: p10bottom .2s infinite forwards linear;
+}
+@keyframes p10bottom{
+   100%{transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 下部分から表示されていく虹 */
+.common-container.tall.p9{
+   position: relative;
+}
+
+.p9red{
+   position: absolute;
+   bottom: 0;
+   left: 120px;
+   width: 30px;
+   height: 15px;
+   border: 5px solid #FF6B6B;
+   border-bottom: 0;
+   border-radius: 30px 30px 0 0;
+   animation: p9red 2s 1 ease;
+}
+.p9orange{
+   position: absolute;
+   bottom: 0;
+   left: 115px;
+   width: 40px;
+   height: 20px;
+   border: 5px solid #ffc06c;
+   border-bottom: 0;
+   border-radius:calc(30px * 1.1) calc(30px * 1.1) 0 0;
+   animation: p9orange 2.5s 1 ease;
+}
+.p9yellow{
+   position: absolute;
+   bottom: 0;
+   left: 110px;
+   width: calc(30px * (4/3) * (4/3) * .9);
+   height: calc(15px * (4/3) * (4/3) * .9);
+   border: 5px solid #def668;
+   border-bottom: 0;
+   border-radius: calc(30px * 1.1 * 1.1) calc(30px * 1.1 * 1.1) 0 0;
+   animation: p9yellow 3s 1 ease;
+}
+.p9green{
+   position: absolute;
+   bottom: 0;
+   left: 105.5px;
+   width: calc(30px * (4/3) * (4/3) * (4/3) * .9 * .9);
+   height: calc(15px * (4/3) * (4/3) * (4/3) * .9 * .9);
+   border: 5px solid #56cc56;
+   border-bottom: 0;
+   border-radius: calc(30px * 1.1 * 1.1 * 1.1) calc(30px * 1.1 * 1.1 * 1.1) 0 0;
+   animation: p9green 3.5s 1 ease;
+}
+.p9blue{
+   position: absolute;
+   bottom: 0;
+   left: 101px;
+   width: calc(30px * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .94);
+   height: calc(15px * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .94);
+   border: 5px solid #76ABFA;
+   border-bottom: 0;
+   border-radius: calc(30px * 1.1 * 1.1 * 1.1 * 1.1) calc(30px * 1.1 * 1.1 * 1.1 * 1.1) 0 0;
+   animation: p9blue 4s 1 ease;
+}
+.p9navy{
+   position: absolute;
+   bottom: 0;
+   left: 96px;
+   width: calc(30px * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .9 * .9);
+   height: calc(15px * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .9 * .9);
+   border: 5px solid #487ea4;
+   border-bottom: 0;
+   border-radius: calc(30px * 1.1 * 1.1 * 1.1 * 1.1 * 1.1) calc(30px * 1.1 * 1.1 * 1.1 * 1.1 * 1.1) 0 0;
+   animation: p9navy 4.5s 1 ease;
+}
+.p9purple{
+   position: absolute;
+   bottom: 0;
+   left: 91.8px;
+   width: calc(30px * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .9 * .9 * .9 * .93);
+   height: calc(15px * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * (4/3) * .9 * .9 * .9 * .9 * .9 * .9 * .93);
+   border: 5px solid #6B56B0;
+   border-bottom: 0;
+   border-radius: calc(30px * 1.1 * 1.1 * 1.1 * 1.1 * 1.1 * 1.1) calc(30px * 1.1 * 1.1 * 1.1 * 1.1 * 1.1 * 1.1) 0 0;
+   animation: p9purple 4s 1 ease;
+}
+@keyframes p9red{
+   0%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9orange{
+   0%{opacity: 0;}
+   10%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9yellow{
+   0%{opacity: 0;}
+   20%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9green{
+   0%{opacity: 0;}
+   30%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9blue{
+   0%{opacity: 0;}
+   40%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9navy{
+   0%{opacity: 0;}
+   50%{opacity: 0;}
+   100%{opacity: 1;}
+}
+@keyframes p9purple{
+   0%{opacity: 0;}
+   60%{opacity: 0;}
+   100%{opacity: 1;}
+}
+
+
+.p9rainbow-and-clouds-container{
+   display: flex;
+}
+#p9clouds-left{
+   margin-left: 60px;
+   position: relative;
+   width: 100px;
+   height: 100px;
+   opacity: .8;
+}
+.p9clouds-left{
+   animation: p9clouds-left 6s 1 1.2s;
+}
+@keyframes p9clouds-left{
+   40%{
+      opacity: .8;
+   }
+   70%{
+      transform: translateX(-40px);
+      opacity: 0;
+   }
+   71%{
+      transform: translateX(0);
+      opacity: 0;
+   }
+   100%{
+      opacity: .8;
+   }
+}
+#p9clouds-right{
+   position: relative;
+   width: 100px;
+   height: 100px;
+   opacity: .8;
+}
+.p9clouds-right{
+   animation: p9clouds-right 6s 1 1.2s;
+}
+@keyframes p9clouds-right{
+   40%{
+      opacity: .8;
+   }
+   70%{
+      transform: translateX(40px);
+      opacity: 0;
+   }
+   71%{
+      transform: translateX(0);
+      opacity: 0;
+   }
+   100%{
+      opacity: .8;
+   }
+}
+.c9cloud1,.c9cloud2,.c9cloud3,.c9cloud4,.c9cloud5,.c9cloud6{
+   width: 18px;
+   height:18px;
+   border-radius: 80% 80% 0 0;
+   background-color: rgb(154, 154, 154);
+   position: absolute;
+}
+.c9cloud1{
+   top: 38px;
+   left: 1px;
+   rotate: 270deg;
+}
+.c9cloud2{
+   top: 30px;
+   left: 12px;
+}
+.c9cloud3{
+   top: 30px;
+   left: 25px;
+}
+.c9cloud4{
+   top: 38px;
+   left: 37px;
+   rotate: 90deg;
+}
+.c9cloud5{
+   top: 45px;
+   left: 12px;
+   rotate: 180deg;
+}
+.c9cloud6{
+   top: 45px;
+   left: 25px;
+   rotate: 180deg;
+}
+
+
+
+/* ホバーとかボタンで左から右へ下線が表示 */
+#p8,#p8-btn{
+   font-size: 24px;
+   color: #6B56B0;
+}
+#c8,#c8-btn{
+   position: relative;
+}
+#c8{
+   cursor: pointer;
+}
+#c8::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -4px;
+   width: 0;
+   height: 4px;
+   background-color: #FFE86C;
+   transition: all .6s ease;
+}
+#p8:hover #c8::after{
+   width: 100%;
+}
+
+
+#p8-btn{
+   margin-top: 24px;
+}
+.c8-btn::after,.c8-btn-supplyment::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -4px;
+   width: 100%;
+   height: 4px;
+   /* transform: skewX(-80deg); */
+   background-color: #FFE86C;
+   animation: c8-btn .6s 1;
+}
+@keyframes c8-btn{
+   0%{
+      width: 0;
+   }
+   100%{
+      width: 100%;
+   }
+}
+
+
+
+
+
+/* 七色がずれて動く */
+#p7-red{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(255,0,0);
+}
+.p7-red{
+   animation: p7red 4s infinite alternate;
+}
+@keyframes p7red{
+   100%{
+      transform: translateX(15rem);
+   }
+}
+
+#p7-orange{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(255,150,0);
+}
+.p7-orange{
+   animation: p7orange 4s infinite alternate .2s;
+}
+@keyframes p7orange{
+   100%{
+      transform: translateX(15rem);
+   }
+}
+
+#p7-yellow{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(255,240,0);
+}
+.p7-yellow{
+   animation: p7yellow 4s infinite alternate .4s;
+}
+@keyframes p7yellow{
+   100%{
+      transform: translateX(15rem)
+   }
+}
+
+#p7-green{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(0,135,0);
+}
+.p7-green{
+   animation: p7green 4s infinite alternate .6s;
+}
+@keyframes p7green{
+   100%{
+      transform: translateX(15rem)
+   }
+}
+
+#p7-blue{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(0,145,255);
+}
+.p7-blue{
+   animation: p7blue 4s infinite alternate .8s;
+}
+@keyframes p7blue{
+   100%{
+      transform: translateX(15rem)
+   }
+}
+
+#p7-navy{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(0,100,190);
+}
+.p7-navy{
+   animation: p7navy 4s infinite alternate 1s;
+}
+@keyframes p7navy{
+   100%{
+      transform: translateX(15rem)
+   }
+}
+
+#p7-purple{
+   width: 50px;
+   height: 18px;
+   background-color: rgb(145,0,130);
+}
+.p7-purple{
+   animation: p7purple 4s infinite alternate 1.2s;
+}
+@keyframes p7purple{
+   100%{
+      transform: translateX(15rem)
+   }
+}
+
+
+
+/* 白い犬が動く */
+#p6{
+   width: 80px;
+   height: 80px;
+   background-color: #ffe66c;
+}
+.p6{
+   animation: p6animation 4s infinite;
+}
+@keyframes p6animation{
+0%{
+   transform: translate(0,0);
+}
+25%{
+   transform: translate(100px,0) rotate(180deg) scale(.5,.5);
+}
+50%{
+   transform: translate(100px,-100px);
+}
+75%{
+   transform: translate(0,-100px) scale(1.5,1.5);
+}
+100%{
+   transform: translate(0,0);
+}
+}
+#c6{
+   width: 40px;
+   height: 40px;
+   padding: 20px;
+   background: url(/mystudy/img/白い犬.png) center/cover;
+}
+.c6{
+   animation: c6animation 4s infinite;
+}
+@keyframes c6animation{
+   25%{
+      transform:rotate(-540deg);
+   }
+   50%{
+      transform: scale(1,1);
+   }
+   75%{
+      transform: scale(.2,.2);
+   }
+   87.5%{
+      transform: translate(0,-500px);
+   }
+   }
+
+
+
+
+/* 回転球を回転中心とする球 */
+#p5{
+   width: 64px;
+   height: 64px;
+   background-color: #FF6B6B;
+   box-shadow: 0 0 40px #FF6B6B;
+   border-radius: 50%;
+   margin-left: 32px;
+   margin-bottom: 280px;
+   position: relative;
+}
+.p5{
+   animation: p5rotation 2.5s infinite linear;
+}
+@keyframes p5rotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: 250% 200%;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: 250% 200%;
+   }
+}
+
+#c5{
+   width: 32px;
+   height: 32px;
+   background-color: #487ea4;
+   box-shadow: 0 0 16px #487ea4;
+   border-radius: 50%;
+   position: absolute;
+   top: 60px;
+   right: -50px;
+}
+.c5{
+   animation: c5rotation 2.5s infinite linear;
+}
+@keyframes c5rotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: -50px -28px;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: -50px -28px;
+   }
+}
+#c5-1{
+   width: 14px;
+   height: 12px;
+   border-radius: 80% 30% 60% 40%;
+   background-color: #56cc56;
+   margin: 1.5px 0 0 2px;
+}
+#c5-2{
+   width: 8px;
+   height: 8px;
+   border-radius: 50% 0 100% 0;
+   background-color: #56cc56;
+   margin-left: 23px;
+   margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* 八色が回転 */
+.colors-rotation-containerTop{
+   display: flex;
+   margin:32px 0 0 32px;
+}
+.colors-rotation-containerBottom{
+   display: flex;
+   margin-left: 32px;
+}
+
+#p4LT{
+   width: 32px;
+   height: 32px;
+   border-radius: 100% 0 0 0;
+   border-left: 16px solid #FF6B6B;
+   border-top: 16px solid #A646A6;
+   position: relative;
+}
+
+#p4RT{
+   width: 32px;
+   height: 32px;
+   border-radius: 0 100% 0 0;
+   border-top:16px solid #6B56B0;
+   border-right: 16px solid #487ea4;
+}
+#p4RB{
+   width: 32px;
+   height: 32px;
+   border-radius: 0 0 100% 0;
+   border-right:16px solid #56cc56;
+   border-bottom: 16px solid #def668;
+}
+#p4LB{
+   width: 32px;
+   height: 32px;
+   border-radius: 0 0 0 100%;
+   border-bottom:16px solid #ffe66c;
+   border-left: 16px solid #ffc06c;
+}
+
+
+.colors-leftTop{
+   animation: p4LTrotation .7s infinite linear;
+}
+@keyframes p4LTrotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: right bottom;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: right bottom;
+   }
+}
+.colors-rightTop{
+   animation: p4RTrotation .7s infinite linear;
+}
+@keyframes p4RTrotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: left bottom;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: left bottom;
+   }
+}
+.colors-rightBottom{
+   animation: p4RBrotation .7s infinite linear;
+}
+@keyframes p4RBrotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: left top;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: left top;
+   }
+}
+.colors-leftBottom{
+   animation: p4LBrotation .7s infinite linear;
+}
+@keyframes p4LBrotation{
+   0%{
+      transform: rotate(0);
+      transform-origin: right top;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: right top;
+   }
+}
+
+
+
+/* thank you btn */
+#thank-you-container{
+   display: flex;
+   justify-content: flex-end;
+   align-items: baseline;
+   gap: 0 10px;
+}
+#thank-you-finger{
+   font-size: 35px;
+}
+#thank-you-btn{
+   all: unset;
+   width: 262px;
+   height: 36px;
+   border-radius: 8px;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 0.02em;
+   background-color: rgb(0, 0, 0);
+   border: none;
+   border-bottom: 4px solid rgb(0, 0, 0);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 2%;
+   margin-top: 120px;
+   margin-bottom: 8px;
+}
+#thank-you-btn:hover{
+   animation: thank-you-btn-hover 2s 1 forwards;
+}
+@keyframes thank-you-btn-hover{
+   100%{background-color: rgb(44, 235, 184);}
+}
+#thank-you-btn:active{
+   transform: translateY(4px);
+   border: none;
+}
+
+/* rgba(247, 0, 255, 0.69) */
+.thank-you-for-seeing{
+   z-index: 5;
+   position: fixed;
+   top: 20%;
+   width: 100%;
+   height: 300px;
+   background-color: rgba(44, 235, 184, 0.821);
+   display: flex;
+   align-items: center;
+   animation: thank-you-btn-active 5s 1 forwards;
+
+   color: rgb(255, 255, 255);
+   font-size: 450%;
+   font-family: "GreatVibes";
+   padding-left: 5%;
+}
+#thank-you-for-seeing{
+   opacity: 0;
+}
+
+@keyframes thank-you-btn-active{
+   0%{
+      opacity: 0;
+   }
+   50%{
+      opacity: 1;
+   }
+   70%{
+      opacity: 1;
+   }
+   100%{
+      opacity: 0;
+      pointer-events: none;
+   }
+}
