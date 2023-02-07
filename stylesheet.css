@@ -633,7 +633,7 @@ button:active{
    width: 40px;
    height: 40px;
    padding: 20px;
-   background: url(/mystudy/img/白い犬.png) center/cover;
+   background: url(/CSS-animation-practice/img/白い犬.png) center/cover;
 }
 .c6{
    animation: c6animation 4s infinite;
