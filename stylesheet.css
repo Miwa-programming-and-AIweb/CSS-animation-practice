@@ -864,6 +864,7 @@ button:active{
 #thank-you-btn:active{
    transform: translateY(4px);
    border: none;
+   margin-bottom:4px;
 }
 
 /* rgba(247, 0, 255, 0.69) */
